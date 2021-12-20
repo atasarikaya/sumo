@@ -500,7 +500,6 @@ function Profile() {
                         </div>
                         <h2>{profile.name}</h2>
                         <h4>Income: {editIncome ? "Editing" : <>{profile.income ? profile.income + "₺" : "Unknown"}</>}</h4>
-                        <h4>Subscription: {profile.subscription ? "Subscribed" : "Not Subscribed"}</h4>
                         <h4>Location: {editLocation ? "Editing" : <>{profile.location ? profile.location : "Unknown"}</>}</h4>
                     </div>
                     

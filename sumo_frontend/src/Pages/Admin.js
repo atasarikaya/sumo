@@ -14,12 +14,6 @@ const columns = [
         width: 180 
     },
     {
-        field: 'subscription',
-        headerName: 'Is Subscribed?',
-        width: 120,
-        type: 'boolean',
-    },
-    {
         field: 'expert_Id', 
         headerName: 'Expert Id', 
         width: 180 
@@ -63,7 +57,6 @@ function Admin() {
                     id: i,
                     name: item.name,
                     email: item.email,
-                    subscription: item.subscription ? true : false,
                     expert_Id: item.expert_Id ? item.expert_Id : "None"
                 } ,
                 d[i] = item
