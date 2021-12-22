@@ -77,41 +77,38 @@ function Summary() {
                     </div>
                 </div>
                 <div className="summaryright">
-                    <Chart
-                        width={'500px'}
-                        height={'300px'}
-                        chartType="PieChart"
-                        loader={<div>Loading Chart</div>}
-                        data={habitData}
-                        options={{
-                            title: `Spending Habit Summary \nIncome: ${profile.income}₺, \nTotal Spending: ${totalSpending}₺`,
-                        }}
-                        rootProps={{ 'data-testid': '1' }}
-                        />
-                    <Chart
-                        width={'600px'}
-                        height={'400px'}
-                        chartType="LineChart"
-                        loader={<div>Loading Chart</div>}
-                        data={incomeArr}
-                        options={{
-                            title: `Income Change Chart`,
-                            hAxis: {
-                            title: 'Date',
-                            },
-                            vAxis: {
-                            title: 'Amount',
-                            },
-                        }}
-                        rootProps={{ 'data-testid': '1' }}
-                        />
-                    
-                <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
+                    <div className="chart">
+                        <Chart
+                            width={'500px'}
+                            height={'300px'}
+                            chartType="PieChart"
+                            loader={<div>Loading Chart</div>}
+                            data={habitData}
+                            options={{
+                                title: `Spending Habit Summary \nIncome: ${profile.income}₺, \nTotal Spending: ${totalSpending}₺`,
+                            }}
+                            rootProps={{ 'data-testid': '1' }}
+                            />
+                    </div>
+                    <div className="chart">
+                        <Chart
+                            width={'600px'}
+                            height={'400px'}
+                            chartType="LineChart"
+                            loader={<div>Loading Chart</div>}
+                            data={incomeArr}
+                            options={{
+                                title: `Income Change Chart`,
+                                hAxis: {
+                                title: 'Date',
+                                },
+                                vAxis: {
+                                title: 'Amount',
+                                },
+                            }}
+                            rootProps={{ 'data-testid': '1' }}
+                            />
+                    </div>
                 </div>
             </div>
             

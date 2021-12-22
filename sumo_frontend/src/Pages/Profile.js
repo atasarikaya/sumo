@@ -346,7 +346,7 @@ function Profile() {
                 setProfile(response.data.user);
             }
             else {
-                window.location = "/"
+                window.location = "/";
             }
         });
 
@@ -491,7 +491,6 @@ function Profile() {
                         :
                         <></>
                     }
-
                 </div>
                 <div className="profileleft">
                     <div className="profileInfo">
